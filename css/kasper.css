@@ -130,7 +130,8 @@ header .container::after {
 }
 
 header .logo img {
-  height: 100px;
+  height: 30px;
+  width: auto;
 }
 
 header nav {
