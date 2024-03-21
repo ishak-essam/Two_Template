@@ -13,7 +13,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  direction: rtl;
 }
 
 html {
@@ -130,8 +129,7 @@ header .container::after {
 }
 
 header .logo img {
-  height: 30px;
-  width: auto;
+  height: 40px;
 }
 
 header nav {
@@ -181,7 +179,7 @@ header nav ul li a {
   display: block;
   color: white;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 14px;
   transition: 0.3s;
   position: relative;
   z-index: 2;
@@ -198,7 +196,7 @@ header nav .form {
   height: 30px;
   position: relative;
   margin-left: 30px;
-  border-right: 3px solid white;
+  border-left: 1px solid white;
 }
 
 header nav .form i {
@@ -206,7 +204,6 @@ header nav .form i {
   position: absolute;
   font-size: 20px;
   top: 50%;
-  padding: 10px;
   transform: translateY(-50%);
   right: 0;
 }
@@ -217,7 +214,6 @@ header nav .form i {
   min-height: 100vh;
   background-color: #1f2021;
   background-image: url("../images/landing.jpg");
-
   background-size: cover;
   position: relative;
 }
@@ -233,9 +229,9 @@ header nav .form i {
 
 .landing .text {
   position: absolute;
-  left: 50%;
+  left: 0;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   width: 50%;
   padding: 50px;
   background-color: var(--transparent-color);
@@ -268,7 +264,6 @@ header nav .form i {
 .landing .text .content p {
   font-size: 14px;
   line-height: 2;
-
 }
 
 .landing .change-background {
@@ -334,8 +329,7 @@ header nav .form i {
 }
 
 .services .srv-box i {
-  margin-left: 20px;
-  font-size: 33px;
+  margin-right: 50px;
 }
 
 @media (max-width: 767px) {
@@ -348,8 +342,6 @@ header nav .form i {
 
   .services .srv-box i {
     margin: 0 0 30px;
-    font-size: 35px;
-    ;
   }
 }
 
@@ -361,7 +353,6 @@ header nav .form i {
 .services .srv-box p {
   line-height: 2;
   color: #777;
-  font-weight: bold;
 }
 
 /* End Services */
@@ -372,7 +363,6 @@ header nav .form i {
   height: 600px;
   position: relative;
   background-image: url("../images/design-features.jpg");
-
   background-size: cover;
   display: flex;
   align-items: center;
@@ -420,30 +410,23 @@ header nav .form i {
 .design .text h2 {
   font-weight: normal;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .design .text ul li {
   padding: 15px 0;
 }
 
-.design .text ul li i {
-  padding: 12px;
-  font-size: 25px;
-}
-
-.design .text p {
-  color: red;
-  font-size: 23px;
-  font-weight: bold;
-}
-
-.design .text p i {
-  padding: 8px;
+.design .text ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f108";
+  font-weight: 900;
+  margin-right: 20px;
+  position: relative;
+  top: 1px;
 }
 
 /* End Design */
-
 /* Start Portfolio */
 .portfolio {
   padding-top: var(--section-padding);
